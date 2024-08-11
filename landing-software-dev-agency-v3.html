@@ -1,222 +1,263 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
-  <head>
-    <meta charset="utf-8">
-    <title>Silicon | Software Dev Agency Landing v.3</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
+<head>
+  <meta charset="utf-8">
+  <title>Silicon | Software Dev Agency Landing v.3</title>
 
-    <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+  <meta name="keywords"
+    content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+  <meta name="author" content="Createx Studio">
 
-    <!-- Theme switcher (color modes) -->
-    <script src="assets/js/theme-switcher.js"></script>
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Favicon and Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#080032">
-    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+  <!-- Theme switcher (color modes) -->
+  <script src="assets/js/theme-switcher.js"></script>
 
-    <!-- Vendor Styles -->
-    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
-    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+  <!-- Favicon and Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#080032">
+  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Main Theme Styles + Bootstrap -->
-    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+  <!-- Vendor Styles -->
+  <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+  <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
 
-    <!-- Page loading styles -->
-    <style>
-               .bg-image {
+  <!-- Main Theme Styles + Bootstrap -->
+  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+  <!-- Page loading styles -->
+  <style>
+    .bg-image {
       background-image: url('assets/img/landing/software-agency-2/hero-bg.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
-      .page-loading {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        -webkit-transition: all .4s .2s ease-in-out;
-        transition: all .4s .2s ease-in-out;
-        background-color: #fff;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 9999;
-      }
-      [data-bs-theme="dark"] .page-loading {
-        background-color: #0b0f19;
-      }
-      .page-loading.active {
-        opacity: 1;
-        visibility: visible;
-      }
-      .page-loading-inner {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        -webkit-transition: opacity .2s ease-in-out;
-        transition: opacity .2s ease-in-out;
-        opacity: 0;
-      }
-      .page-loading.active > .page-loading-inner {
-        opacity: 1;
-      }
-      .page-loading-inner > span {
-        display: block;
-        font-size: 1rem;
-        font-weight: normal;
-        color: #9397ad;
-      }
-      [data-bs-theme="dark"] .page-loading-inner > span {
-        color: #fff;
-        opacity: .6;
-      }
-      .page-spinner {
-        display: inline-block;
-        width: 2.75rem;
-        height: 2.75rem;
-        margin-bottom: .75rem;
-        vertical-align: text-bottom;
-        border: .15em solid #b4b7c9;
-        border-right-color: transparent;
-        border-radius: 50%;
-        -webkit-animation: spinner .75s linear infinite;
-        animation: spinner .75s linear infinite;
-      }
-      [data-bs-theme="dark"] .page-spinner {
-        border-color: rgba(255,255,255,.4);
-        border-right-color: transparent;
-      }
-      @-webkit-keyframes spinner {
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
-      }
-      @keyframes spinner {
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
-      }
-    </style>
-    
-    <!-- Page custom styles -->
-    <style>
 
-      /* Spin animation */
-      @-webkit-keyframes hero-spin {
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
+    .page-loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all .4s .2s ease-in-out;
+      transition: all .4s .2s ease-in-out;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+
+    [data-bs-theme="dark"] .page-loading {
+      background-color: #0b0f19;
+    }
+
+    .page-loading.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .page-loading-inner {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity .2s ease-in-out;
+      transition: opacity .2s ease-in-out;
+      opacity: 0;
+    }
+
+    .page-loading.active>.page-loading-inner {
+      opacity: 1;
+    }
+
+    .page-loading-inner>span {
+      display: block;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #9397ad;
+    }
+
+    [data-bs-theme="dark"] .page-loading-inner>span {
+      color: #fff;
+      opacity: .6;
+    }
+
+    .page-spinner {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-bottom: .75rem;
+      vertical-align: text-bottom;
+      border: .15em solid #b4b7c9;
+      border-right-color: transparent;
+      border-radius: 50%;
+      -webkit-animation: spinner .75s linear infinite;
+      animation: spinner .75s linear infinite;
+    }
+
+    [data-bs-theme="dark"] .page-spinner {
+      border-color: rgba(255, 255, 255, .4);
+      border-right-color: transparent;
+    }
+
+    @-webkit-keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
       }
-      @keyframes hero-spin {
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
+    }
+
+    @keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
       }
-      .hero-animation-spin {
-        -webkit-animation: hero-spin 35s linear infinite;
-        animation: hero-spin 35s linear infinite;
+    }
+  </style>
+
+  <!-- Page custom styles -->
+  <style>
+    /* Spin animation */
+    @-webkit-keyframes hero-spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes hero-spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    .hero-animation-spin {
+      -webkit-animation: hero-spin 35s linear infinite;
+      animation: hero-spin 35s linear infinite;
+    }
+
+    /* Fade animation */
+    @-webkit-keyframes hero-fade {
+
+      0%,
+      100% {
+        opacity: 0
       }
 
-      /* Fade animation */
-      @-webkit-keyframes hero-fade {
-        0%, 100% { opacity: 0 }
-        50% { opacity: 1 }
+      50% {
+        opacity: 1
       }
-      @keyframes hero-fade {
-        0%, 100% { opacity: 0 }
-        50% { opacity: 1 }
+    }
+
+    @keyframes hero-fade {
+
+      0%,
+      100% {
+        opacity: 0
       }
-      .hero-animation-fade {
-        -webkit-animation: hero-fade 4s ease-in infinite;
-        animation: hero-fade 4s ease-in infinite;
+
+      50% {
+        opacity: 1
       }
-      .hero-animation-delay-1,
-      .hero-animation-delay-2,
-      .hero-animation-delay-3 {
-        opacity: 0;
-      }
-      .hero-animation-delay-1 { animation-delay: .75s; }
-      .hero-animation-delay-2 { animation-delay: 1.5s; }
-      .hero-animation-delay-3 { animation-delay: 2s; }
-    </style>
+    }
+
+    .hero-animation-fade {
+      -webkit-animation: hero-fade 4s ease-in infinite;
+      animation: hero-fade 4s ease-in infinite;
+    }
+
+    .hero-animation-delay-1,
+    .hero-animation-delay-2,
+    .hero-animation-delay-3 {
+      opacity: 0;
+    }
+
+    .hero-animation-delay-1 {
+      animation-delay: .75s;
+    }
+
+    .hero-animation-delay-2 {
+      animation-delay: 1.5s;
+    }
+
+    .hero-animation-delay-3 {
+      animation-delay: 2s;
+    }
+  </style>
 
 
-    <!-- Page loading scripts -->
-    <script>
-      (function () {
-        window.onload = function () {
-          const preloader = document.querySelector('.page-loading');
-          preloader.classList.remove('active');
-          setTimeout(function () {
-            preloader.remove();
-          }, 1000);
-        };
-      })();
-    </script>
-  </head>
+  <!-- Page loading scripts -->
+  <script>
+    (function () {
+      window.onload = function () {
+        const preloader = document.querySelector('.page-loading');
+        preloader.classList.remove('active');
+        setTimeout(function () {
+          preloader.remove();
+        }, 1000);
+      };
+    })();
+  </script>
+</head>
 
 
-  <!-- Body -->
-  <body>
+<!-- Body -->
 
-    <!-- Page loading spinner -->
-    <div class="page-loading active">
-      <div class="page-loading-inner">
-        <div class="page-spinner"></div><span>Loading...</span>
-      </div>
+<body>
+
+  <!-- Page loading spinner -->
+  <div class="page-loading active">
+    <div class="page-loading-inner">
+      <div class="page-spinner"></div><span>Loading...</span>
     </div>
+  </div>
 
 
-    <!-- Page wrapper for sticky footer -->
-    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
-    <main class="page-wrapper">
+  <!-- Page wrapper for sticky footer -->
+  <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+  <main class="page-wrapper">
 
 
-      <!-- Navbar -->
-      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page --> 
-      <header class="header navbar navbar-expand-lg navbar-dark position-absolute navbar-sticky mt-3">
-        <div class="container px-3">
-          <div class="d-flex align-items-center justify-content-between">
-            <a href="index.html" class="navbar-brand pe-3">
-              <!-- <img src="assets/img/logo.svg" width="47" alt="Silicon"> -->
-              Ressourcial
-            </a>
-            <div class="btn-group ms-3" role="group" aria-label="Outline button group">
-              <button type="button" class="btn btn-outline-primary btn-sm">
-                Entreprise
-              </button>
-              <button type="button" class="btn btn-outline-primary btn-sm">
-                Candidat
-              </button>
-            </div>
+    <!-- Navbar -->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+    <header class="header navbar navbar-expand-lg navbar-dark position-absolute navbar-sticky mt-3">
+      <div class="container px-3">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="index.html" class="navbar-brand pe-3">
+            <!-- <img src="assets/img/logo.svg" width="47" alt="Silicon"> -->
+            Ressourcial
+          </a>
+          <div class="btn-group ms-3" role="group" aria-label="Outline button group">
+            <button type="button" class="btn btn-outline-primary btn-sm">
+              Entreprise
+            </button>
+            <button type="button" class="btn btn-outline-primary btn-sm">
+              Candidat
+            </button>
           </div>
-          <div class="d-flex align-items-center justify-content-between">
-            <div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
-    
-              <div class="offcanvas-body">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <!--   <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Recruter</a>
                     <div class="dropdown-menu dropdown-menu-dark p-0">
@@ -255,7 +296,7 @@
                       </div>
                     </div>
                   </li> -->
-             <!--      <li class="nav-item dropdown">
+                <!--      <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Former</a>
                     <div class="dropdown-menu dropdown-menu-dark">
                       <div class="d-lg-flex pt-lg-3">
@@ -314,167 +355,180 @@
                       </div>
                     </div>
                   </li> -->
-                  <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Recruter</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li>
-                        <a href="#" class="dropdown-item d-flex align-items-center">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Recruter</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a href="#" class="dropdown-item d-flex align-items-center">
+                        <i class="bx bx-log-in fs-5"></i>
+                        <span class="ms-2">Auditer mon organisation</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item d-flex align-items-center">
+                        <i class="bx bx-log-in fs-5"></i>
+                        <span class="ms-2">Auditer mon organisation</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item d-flex align-items-center">
+                        <i class="bx bx-log-in fs-5"></i>
+                        <span class="ms-2">Auditer mon organisation</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Former</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a href="#" class="dropdown-item d-flex flex-column align-items-start">
+                        <div class="d-flex align-items-center">
                           <i class="bx bx-log-in fs-5"></i>
                           <span class="ms-2">Auditer mon organisation</span>
-                        </a>
-                      </li>
-                      <li>                     
-                        <a href="#" class="dropdown-item d-flex align-items-center">
+                        </div>
+                        <span class="small text-muted ms-4">This is a brief description This is a brief
+                          description.</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item d-flex align-items-center">
                         <i class="bx bx-log-in fs-5"></i>
                         <span class="ms-2">Auditer mon organisation</span>
-                      </a></li>
-                      <li>                     
-                        <a href="#" class="dropdown-item d-flex align-items-center">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item d-flex align-items-center">
                         <i class="bx bx-log-in fs-5"></i>
                         <span class="ms-2">Auditer mon organisation</span>
-                      </a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Former</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li>
-                        <a href="#" class="dropdown-item d-flex flex-column align-items-start">
-                          <div class="d-flex align-items-center">
-                            <i class="bx bx-log-in fs-5"></i>
-                            <span class="ms-2">Auditer mon organisation</span>
-                          </div>
-                          <span class="small text-muted ms-4">This is a brief description This is a brief description.</span>
-                        </a>
-                      </li>
-                      <li>                     
-                        <a href="#" class="dropdown-item d-flex align-items-center">
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Conseiller</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a href="#" class="dropdown-item d-flex align-items-center">
                         <i class="bx bx-log-in fs-5"></i>
                         <span class="ms-2">Auditer mon organisation</span>
-                      </a></li>
-                      <li>                     
-                        <a href="#" class="dropdown-item d-flex align-items-center">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item d-flex align-items-center">
                         <i class="bx bx-log-in fs-5"></i>
                         <span class="ms-2">Auditer mon organisation</span>
-                      </a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Conseiller</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li>
-                        <a href="#" class="dropdown-item d-flex align-items-center">
-                          <i class="bx bx-log-in fs-5"></i>
-                          <span class="ms-2">Auditer mon organisation</span>
-                        </a>
-                      </li>
-                      <li>                     
-                        <a href="#" class="dropdown-item d-flex align-items-center">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item d-flex align-items-center">
                         <i class="bx bx-log-in fs-5"></i>
                         <span class="ms-2">Auditer mon organisation</span>
-                      </a></li>
-                      <li>                     
-                        <a href="#" class="dropdown-item d-flex align-items-center">
-                        <i class="bx bx-log-in fs-5"></i>
-                        <span class="ms-2">Auditer mon organisation</span>
-                      </a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">A Propos de Ressourcial</a>
-                  </li>
-  <!--                 <li class="nav-item">
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">A Propos de Ressourcial</a>
+                </li>
+                <!--                 <li class="nav-item">
                     <a href="docs/getting-started.html" class="nav-link">Docs</a>
                   </li> -->
-                </ul>
-              </div>
-              <div class="offcanvas-header border-top border-light">
-                <a href="#top" class="btn btn-primary w-100" >
-                  <i class='bx bxs-user'></i>
-                  <!-- <i class="bx bx-log-in fs-4 lh-1 me-1"></i> -->
-                  &nbsp;Se Connecter
-                </a>
-  
-              </div>      
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top border-light">
+              <a href="#top" class="btn btn-primary w-100">
+                <i class='bx bxs-user'></i>
+                <!-- <i class="bx bx-log-in fs-4 lh-1 me-1"></i> -->
+                &nbsp;Se Connecter
+              </a>
+
             </div>
           </div>
-          
- <!--          <div class="pe-lg-1 ms-auto me-4" data-bs-theme="dark">
+        </div>
+
+        <!--          <div class="pe-lg-1 ms-auto me-4" data-bs-theme="dark">
             <div class="form-check form-switch mode-switch" data-bs-toggle="mode">
               <input type="checkbox" class="form-check-input" id="theme-mode">
               <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
               <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
             </div>
           </div> -->
-          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a href="#top" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" >
-            <i class='bx bxs-user'></i>
-            <!-- <i class="bx bx-log-in fs-5 lh-1 me-1"></i> -->
-            &nbsp;Se Connecter
-          </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#top" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
+          <i class='bx bxs-user'></i>
+          <!-- <i class="bx bx-log-in fs-5 lh-1 me-1"></i> -->
+          &nbsp;Se Connecter
+        </a>
 
-        </div>
-      </header>
+      </div>
+    </header>
 
 
-      <!-- Hero + animations -->
-      <section class="position-relative d-flex align-items-center min-vh-100 py-5 bg-dark overflow-hidden bg-image">
-        <span class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
-        <div class="container position-relative mt-5 mb-lg-5 mb-md-4 mb-3 pt-3 pb-xl-3" data-bs-theme="dark">
-          <div class="row gy-5">
-            <div class="col-xl-5 col-lg-6">
-              <div class="position-relative zindex-5 text-lg-start text-center">
-                <h1 class="display-5 mt-5">
-                  Transformer le potentiel en succès :
-                  Votre partenaire en
-                </h1>
-                <h3 class="display-5">
-                  <span id="element"></span>
-                </h3>
-                <!-- <h1 class="display-2 mb-4 pb-lg-3 pb-md-2"><span  id="element" ></span></h1> -->
+    <!-- Hero + animations -->
+    <section class="position-relative d-flex align-items-center min-vh-100 py-5 bg-dark overflow-hidden bg-image">
+      <span class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
+      <div class="container position-relative mt-5 mb-lg-5 mb-md-4 mb-3 pt-3 pb-xl-3" data-bs-theme="dark">
+        <div class="row gy-5">
+          <div class="col-xl-5 col-lg-6">
+            <div class="position-relative zindex-5 text-lg-start text-center">
+              <h1 class="display-5 mt-5">
+                Transformer le potentiel en succès :
+                Votre partenaire en
+              </h1>
+              <h3 class="display-5">
+                <span id="element"></span>
+              </h3>
+              <!-- <h1 class="display-2 mb-4 pb-lg-3 pb-md-2"><span  id="element" ></span></h1> -->
 
-<!--                 <p class="mb-4 pb-lg-3 pb-md-2">
+              <!--                 <p class="mb-4 pb-lg-3 pb-md-2">
                   <span class="me-2 text-light">We are the Top Rated agency on</span>
                   <img src="assets/img/landing/software-agency-3/clutch-rating.png" width="193" alt="Clutch rating" class="mt-n1">
                 </p>
                 <a href="#" class="btn btn-lg btn-primary">Start your project</a> -->
-              </div>
             </div>
-            <div class="col-lg-5 offset-xl-1">
-              <div class="position-relative ms-xl-0 ms-lg-4">
-                <div class="position-absolute top-50 start-50 translate-middle ratio ratio-1x1" style="width: 125%; max-width: 49.75rem;">
-                  <div class="p-md-0 p-5">
-                    <img src="assets/img/landing/software-agency-3/hero-bg.png" alt="Shape" class="hero-animation-spin p-md-0 p-5">
-                  </div>
+          </div>
+          <div class="col-lg-5 offset-xl-1">
+            <div class="position-relative ms-xl-0 ms-lg-4">
+              <div class="position-absolute top-50 start-50 translate-middle ratio ratio-1x1"
+                style="width: 125%; max-width: 49.75rem;">
+                <div class="p-md-0 p-5">
+                  <img src="assets/img/landing/software-agency-3/hero-bg.png" alt="Shape"
+                    class="hero-animation-spin p-md-0 p-5">
                 </div>
-                <div class="position-relative row row-cols-sm-2 row-cols-1 gx-xl-4 gx-lg-3 gx-md-4 gx-3">
-                  <div class="col">
-                    <div class="d-sm-grid d-flex gap-xl-4 gap-lg-3 gap-md-4 gap-sm-3 gap-2">
-                      <div class="d-flex align-items-center justify-content-center bg-secondary rounded-3" style="min-height: 176px; backdrop-filter: blur(6px);">
-                        <div class="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
-                          <span class="hero-animation-fade text-white">RECRUTEMENT</span>
-                        </div>
+              </div>
+              <div class="position-relative row row-cols-sm-2 row-cols-1 gx-xl-4 gx-lg-3 gx-md-4 gx-3">
+                <div class="col">
+                  <div class="d-sm-grid d-flex gap-xl-4 gap-lg-3 gap-md-4 gap-sm-3 gap-2">
+                    <div class="d-flex align-items-center justify-content-center bg-secondary rounded-3"
+                      style="min-height: 176px; backdrop-filter: blur(6px);">
+                      <div class="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
+                        <span class="hero-animation-fade text-white">RECRUTEMENT</span>
                       </div>
-                      <div class="d-flex align-items-center justify-content-center bg-secondary rounded-3" style="min-height: 176px; backdrop-filter: blur(6px);">
-                        <div class="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
-                          <span class="hero-animation-fade hero-animation-delay-2 text-white">FORMATION</span>
-                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center bg-secondary rounded-3"
+                      style="min-height: 176px; backdrop-filter: blur(6px);">
+                      <div class="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
+                        <span class="hero-animation-fade hero-animation-delay-2 text-white">FORMATION</span>
                       </div>
                     </div>
                   </div>
-                  <div class="col mt-sm-5 mt-2 pt-sm-5">
-                    <div class="d-sm-grid d-flex gap-xl-4 gap-lg-3 gap-md-4 gap-sm-3 gap-2">
-                      <div class="d-flex align-items-center justify-content-center bg-secondary rounded-3" style="min-height: 176px; backdrop-filter: blur(6px);">
-                        <div class="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
-                          <span class="hero-animation-fade hero-animation-delay-1 text-white">COACHING</span>
-                        </div>
+                </div>
+                <div class="col mt-sm-5 mt-2 pt-sm-5">
+                  <div class="d-sm-grid d-flex gap-xl-4 gap-lg-3 gap-md-4 gap-sm-3 gap-2">
+                    <div class="d-flex align-items-center justify-content-center bg-secondary rounded-3"
+                      style="min-height: 176px; backdrop-filter: blur(6px);">
+                      <div class="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
+                        <span class="hero-animation-fade hero-animation-delay-1 text-white">COACHING</span>
                       </div>
-                      <div class="d-flex align-items-center justify-content-center bg-secondary rounded-3" style="min-height: 176px; backdrop-filter: blur(6px);">
-                        <div class="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
-                          <span class="hero-animation-fade hero-animation-delay-3 text-white">CONSEIL</span>
-                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center bg-secondary rounded-3"
+                      style="min-height: 176px; backdrop-filter: blur(6px);">
+                      <div class="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
+                        <span class="hero-animation-fade hero-animation-delay-3 text-white">CONSEIL</span>
                       </div>
                     </div>
                   </div>
@@ -483,12 +537,134 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-        <!-- Integrations (carousel on screens < 1100px) -->
-        <section class="position-relative container zindex-2 py-5 mt-lg-3 mb-md-2">
-          <h2 class="h4 text-center mb-2 mb-sm-3">Fully integrated with</h2>
-          <div class="swiper" data-swiper-options='{
+    <!-- New Section -->
+    <!-- <section class="container py-5">
+      <h1 class="text-center mb-5">Hello World.</h1>
+      <div>
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="tilt-3d position-relative bg-gradient-primary mx-auto rounded-5" data-tilt data-tilt-glare
+              data-tilt-max-glare="0.4" style="min-height: 250px;">
+              <div
+                class="tilt-3d-inner d-flex flex-column align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100 text-center p-3">
+                <h4 class="text-light text-shadow mb-0">Hover and move your mouse</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="tilt-3d position-relative bg-gradient-primary mx-auto rounded-5" data-tilt data-tilt-glare
+              data-tilt-max-glare="0.4" style="min-height: 250px;">
+              <div
+                class="tilt-3d-inner d-flex flex-column align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100 text-center p-3">
+                <h4 class="text-light text-shadow mb-0">Hover and move your mouse</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-5">
+            <div class="tilt-3d position-relative bg-gradient-primary mx-auto rounded-5" data-tilt data-tilt-glare
+              data-tilt-max-glare="0.4" style="min-height: 250px;">
+              <div
+                class="tilt-3d-inner d-flex flex-column align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100 text-center p-3">
+                <h4 class="text-light text-shadow mb-0">Hover and move your mouse</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="tilt-3d position-relative bg-gradient-primary mx-auto rounded-5" data-tilt data-tilt-glare
+              data-tilt-max-glare="0.4" style="min-height: 250px;">
+              <div
+                class="tilt-3d-inner d-flex flex-column align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100 text-center p-3">
+                <h4 class="text-light text-shadow mb-0">Hover and move your mouse</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- New Section -->
+
+    <section class="position-relative zindex-2 my-5">
+      <div class="card border-0 rounded-3 shadow py-5 px-3 px-lg-0 mx-auto" style="max-width: 1560px;">
+        <div class="container py-lg-4 py-xl-5">
+          <div class="row pt-md-3 pb-md-2">
+            <div class="col-lg-4 d-flex flex-column text-center text-lg-start mb-3 mb-sm-4 mb-lg-0 pe-4">
+              <h2 class="h1">New generation mobile bank. An easy way to
+                <span class="text-primary">manage your finances</span> directly from your smartphone*.
+              </h2>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="row g-4 g-xl-5">
+                <div class="col-md-6">
+                  <div class="text-sm-start">
+                    <div class="tilt-3d position-relative bg-gradient-primary mx-auto rounded-5" data-tilt data-tilt-glare
+                      data-tilt-max-glare="0.4" style="min-height: 400px;">
+                      <div
+                        class="tilt-3d-inner position-absolute top-0 start-0 w-100 h-100 px-4 py-5">
+                        <h3 class="text-light text-shadow mb-4">Recrutement</h3>
+                        <p class="text-light h7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae vel, perferendis neque molestias qui ipsa praesentium, laudantium tempore sit adipisci illo rerum maiores consequatur blanditiis, cumque fugit. Harum, ut laboriosam.</p>
+                        <button class="btn btn-secondary">More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-sm-start">
+                    <div class="tilt-3d position-relative bg-gradient-primary mx-auto rounded-5" data-tilt data-tilt-glare
+                      data-tilt-max-glare="0.4" style="min-height: 400px;">
+                      <div
+                        class="tilt-3d-inner position-absolute top-0 start-0 w-100 h-100 px-4 py-5">
+                        <h3 class="text-light text-shadow mb-4">Formation</h3>
+                        <p class="text-light h7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae vel, perferendis neque molestias qui ipsa praesentium, laudantium tempore sit adipisci illo rerum maiores consequatur blanditiis, cumque fugit. Harum, ut laboriosam.</p>
+                        <button class="btn btn-secondary">More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-sm-start">
+                    <div class="tilt-3d position-relative bg-gradient-primary mx-auto rounded-5" data-tilt data-tilt-glare
+                      data-tilt-max-glare="0.4" style="min-height: 400px;">
+                      <div
+                        class="tilt-3d-inner position-absolute top-0 start-0 w-100 h-100 px-4 py-5">
+                        <h3 class="text-light text-shadow mb-4">Coaching</h3>
+                        <p class="text-light h7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae vel, perferendis neque molestias qui ipsa praesentium, laudantium tempore sit adipisci illo rerum maiores consequatur blanditiis, cumque fugit. Harum, ut laboriosam.</p>
+                        <button class="btn btn-secondary">More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-sm-start">
+                    <div class="tilt-3d position-relative bg-gradient-primary mx-auto rounded-5" data-tilt data-tilt-glare
+                      data-tilt-max-glare="0.4" style="min-height: 400px;">
+                      <div
+                        class="tilt-3d-inner position-absolute top-0 start-0 w-100 h-100 px-4 py-5">
+                        <h3 class="text-light text-shadow mb-4">Conseil</h3>
+                        <p class="text-light h7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae vel, perferendis neque molestias qui ipsa praesentium, laudantium tempore sit adipisci illo rerum maiores consequatur blanditiis, cumque fugit. Harum, ut laboriosam.</p>
+                        <button class="btn btn-secondary">More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations (carousel on screens < 1100px) -->
+    <section class="position-relative container zindex-2 py-5 mt-lg-3 mb-md-2">
+      <h2 class="h4 text-center mb-2 mb-sm-3">Fully integrated with</h2>
+      <div class="swiper" data-swiper-options='{
             "slidesPerView": 2,
             "spaceBetween": 12,
             "pagination": {
@@ -514,112 +690,129 @@
               }
             }
           }'>
-            <div class="swiper-wrapper">
-  
-              <!-- Item -->
-              <div class="swiper-slide">
-                <a href="#" class="swap-image">
-                  <img src="assets/img/landing/app-showcase-3/integrations/envato-gray.svg" class="swap-from" width="196" alt="Envato">
-                  <div class="swap-to">
-                    <img src="assets/img/landing/app-showcase-3/integrations/envato-color-light.svg" class="light-mode-img" width="196" alt="Envato">
-                    <img src="assets/img/landing/app-showcase-3/integrations/envato-color-dark.svg" class="dark-mode-img" width="196" alt="Envato">
-                  </div>
-                </a>
+        <div class="swiper-wrapper">
+
+          <!-- Item -->
+          <div class="swiper-slide">
+            <a href="#" class="swap-image">
+              <img src="assets/img/landing/app-showcase-3/integrations/envato-gray.svg" class="swap-from" width="196"
+                alt="Envato">
+              <div class="swap-to">
+                <img src="assets/img/landing/app-showcase-3/integrations/envato-color-light.svg" class="light-mode-img"
+                  width="196" alt="Envato">
+                <img src="assets/img/landing/app-showcase-3/integrations/envato-color-dark.svg" class="dark-mode-img"
+                  width="196" alt="Envato">
               </div>
-  
-              <!-- Item -->
-              <div class="swiper-slide">
-                <a href="#" class="swap-image">
-                  <img src="assets/img/landing/app-showcase-3/integrations/laravel-gray.svg" class="swap-from" width="196" alt="Laravel">
-                  <img src="assets/img/landing/app-showcase-3/integrations/laravel-color.svg" class="swap-to" width="196" alt="Laravel">
-                </a>
-              </div>
-  
-              <!-- Item -->
-              <div class="swiper-slide">
-                <a href="#" class="swap-image">
-                  <img src="assets/img/landing/app-showcase-3/integrations/magento-gray.svg" class="swap-from" width="196" alt="Magento">
-                  <div class="swap-to">
-                    <img src="assets/img/landing/app-showcase-3/integrations/magento-color-light.svg" class="light-mode-img" width="196" alt="Magento">
-                    <img src="assets/img/landing/app-showcase-3/integrations/magento-color-dark.svg" class="dark-mode-img" width="196" alt="Magento">
-                  </div>
-                </a>
-              </div>
-  
-              <!-- Item -->
-              <div class="swiper-slide">
-                <a href="#" class="swap-image">
-                  <img src="assets/img/landing/app-showcase-3/integrations/pingdom-gray.svg" class="swap-from" width="196" alt="Pingdom">
-                  <div class="swap-to">
-                    <img src="assets/img/landing/app-showcase-3/integrations/pingdom-color-light.svg" class="light-mode-img" width="196" alt="Pingdom">
-                    <img src="assets/img/landing/app-showcase-3/integrations/pingdom-color-dark.svg" class="dark-mode-img" width="196" alt="Pingdom">
-                  </div>
-                </a>
-              </div>
-  
-              <!-- Item -->
-              <div class="swiper-slide">
-                <a href="#" class="swap-image">
-                  <img src="assets/img/landing/app-showcase-3/integrations/angular-gray.svg" class="swap-from" width="196" alt="Angular">
-                  <div class="swap-to">
-                    <img src="assets/img/landing/app-showcase-3/integrations/angular-color-light.svg" class="light-mode-img" width="196" alt="Angular">
-                    <img src="assets/img/landing/app-showcase-3/integrations/angular-color-dark.svg" class="dark-mode-img" width="196" alt="Angular">
-                  </div>
-                </a>
-              </div>
-  
-              <!-- Item -->
-              <div class="swiper-slide">
-                <a href="#" class="swap-image">
-                  <img src="assets/img/landing/app-showcase-3/integrations/woocommerce-gray.svg" class="swap-from" width="196" alt="WooCommerce">
-                  <div class="swap-to">
-                    <img src="assets/img/landing/app-showcase-3/integrations/woocommerce-color-light.svg" class="light-mode-img" width="196" alt="WooCommerce">
-                    <img src="assets/img/landing/app-showcase-3/integrations/woocommerce-color-dark.svg" class="dark-mode-img" width="196" alt="WooCommerce">
-                  </div>
-                </a>
-              </div>
-            </div>
-  
-            <!-- Pagination (bullets) -->
-            <div class="swiper-pagination position-relative pt-2 mt-4"></div>
+            </a>
           </div>
-        </section>
-  
 
-      <!-- About -->
+          <!-- Item -->
+          <div class="swiper-slide">
+            <a href="#" class="swap-image">
+              <img src="assets/img/landing/app-showcase-3/integrations/laravel-gray.svg" class="swap-from" width="196"
+                alt="Laravel">
+              <img src="assets/img/landing/app-showcase-3/integrations/laravel-color.svg" class="swap-to" width="196"
+                alt="Laravel">
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide">
+            <a href="#" class="swap-image">
+              <img src="assets/img/landing/app-showcase-3/integrations/magento-gray.svg" class="swap-from" width="196"
+                alt="Magento">
+              <div class="swap-to">
+                <img src="assets/img/landing/app-showcase-3/integrations/magento-color-light.svg" class="light-mode-img"
+                  width="196" alt="Magento">
+                <img src="assets/img/landing/app-showcase-3/integrations/magento-color-dark.svg" class="dark-mode-img"
+                  width="196" alt="Magento">
+              </div>
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide">
+            <a href="#" class="swap-image">
+              <img src="assets/img/landing/app-showcase-3/integrations/pingdom-gray.svg" class="swap-from" width="196"
+                alt="Pingdom">
+              <div class="swap-to">
+                <img src="assets/img/landing/app-showcase-3/integrations/pingdom-color-light.svg" class="light-mode-img"
+                  width="196" alt="Pingdom">
+                <img src="assets/img/landing/app-showcase-3/integrations/pingdom-color-dark.svg" class="dark-mode-img"
+                  width="196" alt="Pingdom">
+              </div>
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide">
+            <a href="#" class="swap-image">
+              <img src="assets/img/landing/app-showcase-3/integrations/angular-gray.svg" class="swap-from" width="196"
+                alt="Angular">
+              <div class="swap-to">
+                <img src="assets/img/landing/app-showcase-3/integrations/angular-color-light.svg" class="light-mode-img"
+                  width="196" alt="Angular">
+                <img src="assets/img/landing/app-showcase-3/integrations/angular-color-dark.svg" class="dark-mode-img"
+                  width="196" alt="Angular">
+              </div>
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide">
+            <a href="#" class="swap-image">
+              <img src="assets/img/landing/app-showcase-3/integrations/woocommerce-gray.svg" class="swap-from"
+                width="196" alt="WooCommerce">
+              <div class="swap-to">
+                <img src="assets/img/landing/app-showcase-3/integrations/woocommerce-color-light.svg"
+                  class="light-mode-img" width="196" alt="WooCommerce">
+                <img src="assets/img/landing/app-showcase-3/integrations/woocommerce-color-dark.svg"
+                  class="dark-mode-img" width="196" alt="WooCommerce">
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pagination (bullets) -->
+        <div class="swiper-pagination position-relative pt-2 mt-4"></div>
+      </div>
+    </section>
+
+
+    <!-- About -->
 
 
 
-      <!-- Solutions -->
+    <!-- Solutions -->
 
 
-      <!-- Industries (Slider) -->
-
-
-
-      <!-- Technologies -->
+    <!-- Industries (Slider) -->
 
 
 
-      <!-- Projects -->
-
-
-      <!-- Benefits -->
+    <!-- Technologies -->
 
 
 
-      <!-- Brands (carousel on screens < 1100px) -->
+    <!-- Projects -->
+
+
+    <!-- Benefits -->
 
 
 
-      <!-- Blog -->
-
-    </main>
+    <!-- Brands (carousel on screens < 1100px) -->
 
 
-    <!-- Footer -->
-    <footer class="footer position-relative bg-dark pt-3 pb-3 pb-lg-3">
-<!--       <span class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
+
+    <!-- Blog -->
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer position-relative bg-dark pt-3 pb-3 pb-lg-3">
+    <!--       <span class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
       <div class="position-relative container pt-lg-4" data-bs-theme="dark">
         <div class="row pb-5">
           <div class="col-lg-4 col-md-6">
@@ -678,52 +871,53 @@
             </div>
           </div>
         </div> -->
-        <p class="nav d-block fs-xs text-center text-md-center pb-2 pb-lg-0 mb-0">
-          <span class="text-light opacity-50">&copy; All rights reserved. Made by </span>
-          <a class="nav-link d-inline-block p-0"  target="_blank" rel="noopener">Ressourcial</a>
-        </p>
-      </div>
-    </footer>
+    <p class="nav d-block fs-xs text-center text-md-center pb-2 pb-lg-0 mb-0">
+      <span class="text-light opacity-50">&copy; All rights reserved. Made by </span>
+      <a class="nav-link d-inline-block p-0" target="_blank" rel="noopener">Ressourcial</a>
+    </p>
+    </div>
+  </footer>
 
 
-    <!-- Back to top button -->
-    <a href="#top" class="btn-scroll-top" data-scroll>
-      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
-      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
-    </a>
+  <!-- Back to top button -->
+  <a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+  </a>
 
+  <script src="assets/vendor/vanilla-tilt/dist/vanilla-tilt.min.js"></script>
 
-    <!-- Vendor Scripts -->
-    <script src="assets/vendor/rellax/rellax.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
-    <script>
-      // var typed = new Typed('#element', {
-      //   strings: ['<span class="text-primary">Trouver</span> les talents qu\'il vous faut.',
-      //    '<span class="text-primary">Formez</span> vos équipes pour réussir.',
-      //   '<span class="text-primary">Optimisez </span> vos processus grace nos conseils experts.',
-      // ' <span class="text-primary"> Accompagnez</span> vos leaders vers une croissance personnelle et professionnelle.'],
-      //   typeSpeed: 50,
-      //   loop : true,
-      //   backSpeed : 30,
-      //   backDelay : 2500
+  <!-- Vendor Scripts -->
+  <script src="assets/vendor/rellax/rellax.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    // var typed = new Typed('#element', {
+    //   strings: ['<span class="text-primary">Trouver</span> les talents qu\'il vous faut.',
+    //    '<span class="text-primary">Formez</span> vos équipes pour réussir.',
+    //   '<span class="text-primary">Optimisez </span> vos processus grace nos conseils experts.',
+    // ' <span class="text-primary"> Accompagnez</span> vos leaders vers une croissance personnelle et professionnelle.'],
+    //   typeSpeed: 50,
+    //   loop : true,
+    //   backSpeed : 30,
+    //   backDelay : 2500
 
-      // });
-      var typed = new Typed('#element', {
-        strings: ['<span class="text-primary">Recrutement.</span>',
-         '<span class="text-primary">Coaching.</span>',
+    // });
+    var typed = new Typed('#element', {
+      strings: ['<span class="text-primary">Recrutement.</span>',
+        '<span class="text-primary">Coaching.</span>',
         '<span class="text-primary">Développement de carrière. </span>',
       ],
-        typeSpeed: 50,
-        loop : true,
-        backSpeed : 30,
-        backDelay : 2500
+      typeSpeed: 50,
+      loop: true,
+      backSpeed: 30,
+      backDelay: 2500
 
-      });
-    </script>
+    });
+  </script>
 
-    <!-- Main Theme Script -->
-    <script src="assets/js/theme.min.js"></script>
-  </body>
+  <!-- Main Theme Script -->
+  <script src="assets/js/theme.min.js"></script>
+</body>
+
 </html>
-
